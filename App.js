@@ -5,7 +5,7 @@ import Menu from "./src/components/Menu";
 import Media from "./src/components/Media";
 import Imc from "./src/components/Imc";
 import ColorList from "./src/components/ColorList";
-import ImgGenerator from "./src/components/ColorList copy";
+import ImgGenerator from "./src/components/ImgGenerator";
 
 const Stack = createStackNavigator();
 
