@@ -12,3 +12,14 @@ Atualmente o Aplicativo possui quatro funções:
  Até o momento, a parte que mais me chamou a atenção é a função de gerar imagens aleatórias. Ela permite que você gere imagens aleatórias de gatos (atraves [dessa API](https://thecatapi.com/)) e de cahcorros (por meio [dessa API](https://thedogapi.com/)). Sendo minha primeira vez programando para dispositovos mobile e já realizar consumo de API's construir essa função para o app me deixou muito satisfeito.
 
 Coforme o passar das semanas esse aplicativo irá ganhando mais funções e será feito refatorações por mim mesmo, para aplicar o que estou apredendo melhorar o que já existe.
+
+##
+### Instalção e uso
+
+    git clone https://github.com/MatheusKerscher/Primeiro_APP_React_Native.git
+    
+    cd ./Primeiro_APP_React_Native
+    
+    npm i
+    
+    npm start
