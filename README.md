@@ -17,8 +17,8 @@ Coforme o passar das semanas esse aplicativo irá ganhando mais funções e ser�
 ### Instalação e uso
 1. Clone esse repositório e acesse a pasta
    ```sh
-   git clone https://github.com/benmotyka/my-plants_app.git
-   cd my-plants_app/
+   git clone https://github.com/MatheusKerscher/Primeiro_APP_React_Native.git
+   cd Primeiro_APP_React_Native/
    ```
    
 2. Instale os pacotes NPM
