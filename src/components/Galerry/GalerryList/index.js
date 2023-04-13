@@ -41,7 +41,7 @@ export default function GalerryList() {
     <View style={styles.flatList}>
       <View style={styles.buttons}>
         <TouchableOpacity onPress={() => fetchData()} style={styles.btn}>
-          <Text style={styles.textBtn}>Carregar Galeria</Text>
+          <Text style={styles.textBtn}>Gerar Galeria</Text>
         </TouchableOpacity>
       </View>
 

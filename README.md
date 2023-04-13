@@ -7,7 +7,8 @@ Atualmente o Aplicativo possui quatro funções:
  - Calculo de IMC (Índice de Massa Muscular);
  - Calculo de média de dois valores;
  - Gerador aleatório de cores;
- - Gerador aleatório de imagens.
+ - Gerador aleatório de imagens;
+ - Galeria de imagens aleatórias com tamanhos aleatórios.
  
  Até o momento, a parte que mais me chamou a atenção é a função de gerar imagens aleatórias. Ela permite que você gere imagens aleatórias de gatos (atraves [dessa API](https://thecatapi.com/)) e de cahcorros (por meio [dessa API](https://thedogapi.com/)). Sendo minha primeira vez programando para dispositovos mobile e já realizar consumo de API's construir essa função para o app me deixou muito satisfeito.
 
