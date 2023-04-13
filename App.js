@@ -6,6 +6,7 @@ import Media from "./src/components/Media";
 import Imc from "./src/components/Imc";
 import ColorList from "./src/components/ColorList";
 import ImgGenerator from "./src/components/ImgGenerator";
+import Galerry from "./src/components/Galerry";
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ export default function App() {
         <Stack.Screen name="Calculo de Média" component={Media} />
         <Stack.Screen name="Gerar Cores" component={ColorList} />
         <Stack.Screen name="Gerar Imagem" component={ImgGenerator} />
+        <Stack.Screen name="Galeria" component={Galerry} />
       </Stack.Navigator>
     </NavigationContainer>
   );

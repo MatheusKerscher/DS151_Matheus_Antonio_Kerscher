@@ -46,6 +46,15 @@ export default function Menu({ navigation }) {
             <Text style={styles.textBtn}>Gerar Imagem</Text>
           </TouchableOpacity>
         </View>
+
+        <View style={styles.col}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Galeria")}
+            style={styles.btn}
+          >
+            <Text style={styles.textBtn}>Galeria</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
