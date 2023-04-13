@@ -14,12 +14,19 @@ Atualmente o Aplicativo possui quatro funções:
 Coforme o passar das semanas esse aplicativo irá ganhando mais funções e será feito refatorações por mim mesmo, para aplicar o que estou apredendo melhorar o que já existe.
 
 ##
-### Instalção e uso
-
-    git clone https://github.com/MatheusKerscher/Primeiro_APP_React_Native.git
-    
-    cd ./Primeiro_APP_React_Native
-    
-    npm i
-    
-    npm start
+### Instalação e uso
+1. Clone esse repositório e acesse a pasta
+   ```sh
+   git clone https://github.com/benmotyka/my-plants_app.git
+   cd my-plants_app/
+   ```
+   
+2. Instale os pacotes NPM
+   ```sh
+   npm install
+   ```
+   
+3. Rode o App
+   ```sh
+   npm start
+   ```
