@@ -7,6 +7,7 @@ import Imc from "./src/components/Imc";
 import ColorList from "./src/components/ColorList";
 import ImgGenerator from "./src/components/ImgGenerator";
 import Galerry from "./src/components/Galerry";
+import Movies from "./src/components/Movies";
 
 const Stack = createStackNavigator();
 
@@ -20,6 +21,7 @@ export default function App() {
         <Stack.Screen name="Gerar Cores" component={ColorList} />
         <Stack.Screen name="Gerar Imagem" component={ImgGenerator} />
         <Stack.Screen name="Galeria" component={Galerry} />
+        <Stack.Screen name="Filmes" component={Movies} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -8,7 +8,7 @@ import Title from "../Title";
 export default function Menu({ navigation }) {
   return (
     <View>
-      <Title titulo="ATIVIDADES SEMANAIS"/>
+      <Title titulo="ATIVIDADES SEMANAIS" />
 
       <View style={styles.container}>
         <View style={styles.col}>
@@ -53,6 +53,15 @@ export default function Menu({ navigation }) {
             style={styles.btn}
           >
             <Text style={styles.textBtn}>Galeria</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.col}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Filmes")}
+            style={styles.btn}
+          >
+            <Text style={styles.textBtn}>Filmes</Text>
           </TouchableOpacity>
         </View>
       </View>
