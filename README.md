@@ -15,6 +15,17 @@ Atualmente o Aplicativo possui quatro funções:
 Coforme o passar das semanas esse aplicativo irá ganhando mais funções e será feito refatorações por mim mesmo, para aplicar o que estou apredendo melhorar o que já existe.
 
 ##
+### Imagens do aplicativo
+A seguir seguem algumas imagens de como o aplicativo é
+![Home](assets/midiaReadme/tela-1.jpg)
+![IMC](assets/midiaReadme/tela-2.jpg)
+![Media](assets/midiaReadme/tela-3.jpg)
+![Cores](assets/midiaReadme/tela-4.jpg)
+![Dogs&Cats](assets/midiaReadme/tela-5.jpg)
+![Galeria](assets/midiaReadme/tela-6.jpg)
+![Filmes](assets/midiaReadme/tela-7.jpg)
+
+##
 ### Instalação e uso
 1. Clone esse repositório e acesse a pasta
    ```sh
