@@ -8,9 +8,10 @@ Atualmente o Aplicativo possui quatro funções:
  - Calculo de média de dois valores;
  - Gerador aleatório de cores;
  - Gerador aleatório de imagens;
- - Galeria de imagens aleatórias com tamanhos aleatórios.
+ - Galeria de imagens aleatórias com tamanhos aleatórios;
+ - Busca de filmes por gênero.
  
- Até o momento, a parte que mais me chamou a atenção é a função de gerar imagens aleatórias. Ela permite que você gere imagens aleatórias de gatos (atraves [dessa API](https://thecatapi.com/)) e de cahcorros (por meio [dessa API](https://thedogapi.com/)). Sendo minha primeira vez programando para dispositovos mobile e já realizar consumo de API's construir essa função para o app me deixou muito satisfeito.
+ A função de geração aleatória de imagens faz uso de duas API's a  [the Cat API](https://thecatapi.com/) para trazer imagens de gatos e a  [the Dog API](https://thedogapi.com/) para trazer as imagens dos cachorros. A função da galeria também faz uso da **the Dog API** para poder apresentar as imagens para o usuário. Por fim a função de busca de filmes por gênero faz uso da  [TMDB API](https://www.themoviedb.org/documentation/api) tanto para trazer os gêneros que o usuário pode escolher como para trazer os filmes após a escolha do gênero.
 
 Coforme o passar das semanas esse aplicativo irá ganhando mais funções e será feito refatorações por mim mesmo, para aplicar o que estou apredendo melhorar o que já existe.
 
