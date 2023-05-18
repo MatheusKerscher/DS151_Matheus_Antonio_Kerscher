@@ -64,6 +64,15 @@ export default function Menu({ navigation }) {
             <Text style={styles.textBtn}>Filmes</Text>
           </TouchableOpacity>
         </View>
+
+        <View style={styles.col}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Autenticação")}
+            style={styles.btn}
+          >
+            <Text style={styles.textBtn}>Autenticação</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
