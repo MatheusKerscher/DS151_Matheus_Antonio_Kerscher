@@ -1,5 +1,5 @@
 # Atividades Semanais DS151
-Este repositório foi criado com o objetivo de armazenas as atividades semanais da matéria "Desenvolvimento para Dispositivos Móveis". Os trabalhos são feitos através de React Native e Expo Go (usado para conseguir rodar a aplicação no smartphone).
+Este repositório foi criado com o objetivo de armazenar as atividades semanais da matéria "Desenvolvimento para Dispositivos Móveis". Os trabalhos são feitos através de React Native e Expo Go (usado para conseguir rodar a aplicação no smartphone).
 
 ##
 ### Funções do Aplicativo
