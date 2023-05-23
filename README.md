@@ -37,7 +37,7 @@ Coforme o passar das semanas esse aplicativo irá ganhando mais funções e ser�
 ##
 ### Imagens do aplicativo
 A seguir seguem algumas imagens de como o aplicativo é
-![Home](assets/midiaReadme/tela-1.png)
+![Home](assets/midiaReadme/tela-1.png =200x150)
 ![IMC](assets/midiaReadme/tela-2.jpg)
 ![Media](assets/midiaReadme/tela-3.jpg)
 ![Cores](assets/midiaReadme/tela-4.jpg)
