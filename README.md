@@ -5,8 +5,8 @@ Este repositório foi criado com o objetivo de armazenar as atividades semanais 
 ### Instalação e uso
 1. Clone esse repositório e acesse a pasta
    ```sh
-   git clone https://github.com/MatheusKerscher/Primeiro_APP_React_Native.git
-   cd Primeiro_APP_React_Native/
+   git clone https://github.com/MatheusKerscher/DS151_Matheus_Antonio_Kerscher.git
+   cd DS151_Matheus_Antonio_Kerscher/
    ```
    
 2. Instale os pacotes NPM
