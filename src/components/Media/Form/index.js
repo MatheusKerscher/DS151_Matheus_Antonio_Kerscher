@@ -1,10 +1,19 @@
 import React, { useState } from "react";
-import { Text, TextInput, View, TouchableOpacity } from "react-native";
+import {
+  Text,
+  TextInput,
+  View,
+  TouchableOpacity,
+  Keyboard,
+} from "react-native";
 
-import styles from "./style"
+import styles from "./style";
 import ResultMedia from "./ResultMedia";
+import MediaService from "../../../services/mediaService";
+import db from "../../../services/dbService";
 
 export default function Form() {
+  const [nome, setNome] = useState(null);
   const [nota1, setNota1] = useState(null);
   const [nota2, setNota2] = useState(null);
   const [msgMedia, setMsgMedia] = useState("Insira as duas notas");
@@ -12,12 +21,51 @@ export default function Form() {
   const [textButton, setTextButton] = useState("Calcular Média");
 
   function mediaCalculator() {
-    return setMedia(((parseFloat(nota1) + parseFloat(nota2)) / 2).toFixed(2));
+    Keyboard.dismiss();
+
+    let calculatedMedia = ((parseFloat(nota1) + parseFloat(nota2)) / 2).toFixed(
+      2
+    );
+
+    setMedia(calculatedMedia);
+
+    const mediaObj = {
+      nome: nome.trim(),
+      media: calculatedMedia,
+    };
+
+    MediaService.create(mediaObj)
+      .then((insertId) => {
+        console.log("Registro salvo com sucesso! ID: ", insertId);
+      })
+      .catch((error) => {
+        console.error("Erro ao salvar o registro:", error);
+      });
+
+    MediaService.getAll()
+      .then((results) => {
+        console.log("Registros encontrados:");
+        console.log("┌────────┬────────────┬───────┐");
+        console.log("│   ID   │   Nome     │ Média │");
+        console.log("├────────┼────────────┼───────┤");
+        results.forEach((row) => {
+          console.log(
+            `│ ${row.id.toString().padEnd(6)} │ ${row.nome.padEnd(
+              10
+            )} │ ${row.media.toString().padEnd(4)} │`
+          );
+        });
+        console.log("└─────────┴────────────┴───────┘");
+      })
+      .catch((error) => {
+        console.error("Erro ao obter os registros:", error);
+      });
   }
 
   function validationMedia() {
     if (nota2 != null && nota1 != null) {
       mediaCalculator();
+      setNome(null);
       setNota1(null);
       setNota2(null);
       setMsgMedia("Sua média é:");
@@ -33,6 +81,14 @@ export default function Form() {
   return (
     <View style={styles.formContext}>
       <View style={styles.form}>
+        <Text style={styles.formLabel}>Nome</Text>
+        <TextInput
+          onChangeText={setNome}
+          value={nome}
+          style={styles.input}
+          placeholder="Ex. Fulano"
+        />
+
         <Text style={styles.formLabel}>Nota 1</Text>
         <TextInput
           onChangeText={setNota1}
@@ -51,7 +107,10 @@ export default function Form() {
           keyboardType="numeric"
         />
 
-        <TouchableOpacity onPress={() => validationMedia()} style={styles.btnCalculator}>
+        <TouchableOpacity
+          onPress={() => validationMedia()}
+          style={styles.btnCalculator}
+        >
           <Text style={styles.textBtnCalculator}>{textButton}</Text>
         </TouchableOpacity>
       </View>
