@@ -23,7 +23,7 @@ Este repositório foi criado com o objetivo de armazenar as atividades semanais 
 ### Funções do Aplicativo
 Atualmente o Aplicativo possui quatro funções:
  - Calculo de IMC (Índice de Massa Muscular);
- - Calculo de média de dois valores;
+ - Calculo de média de dois valores (usando SQLLite para guardar o histórico de médias);
  - Gerador aleatório de cores;
  - Gerador aleatório de imagens;
  - Galeria de imagens aleatórias com tamanhos aleatórios;
