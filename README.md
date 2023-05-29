@@ -39,7 +39,7 @@ Coforme o passar das semanas esse aplicativo irá ganhando mais funções e ser�
 A seguir seguem algumas imagens de como o aplicativo é
 ![Home](assets/midiaReadme/tela-1.png)
 ![IMC](assets/midiaReadme/tela-2.jpg)
-![Media](assets/midiaReadme/tela-3.jpg)
+![Media](assets/midiaReadme/tela-3.png)
 ![Cores](assets/midiaReadme/tela-4.jpg)
 ![Dogs&Cats](assets/midiaReadme/tela-5.jpg)
 ![Galeria](assets/midiaReadme/tela-6.jpg)
